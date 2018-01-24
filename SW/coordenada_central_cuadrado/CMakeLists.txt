@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( coordenada_central )
+find_package( OpenCV REQUIRED )
+add_executable( opencv_coordenada_central coordenada_central.cpp )
+target_link_libraries( opencv_coordenada_central ${OpenCV_LIBS} )

@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( pruebas )
+find_package( OpenCV REQUIRED )
+add_executable( pruebas linearFilters.cpp )
+target_link_libraries( pruebas ${OpenCV_LIBS} )

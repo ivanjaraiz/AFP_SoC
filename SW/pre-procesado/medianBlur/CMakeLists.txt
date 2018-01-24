@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( medianBlur )
+find_package( OpenCV REQUIRED )
+add_executable( opencv_medianblur medianBlur.cpp )
+target_link_libraries( opencv_medianblur ${OpenCV_LIBS} )

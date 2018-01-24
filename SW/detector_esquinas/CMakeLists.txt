@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( cornerHarris )
+find_package( OpenCV REQUIRED )
+add_executable( opencv_cornerHarris cornerHarris.cpp )
+target_link_libraries( opencv_cornerHarris ${OpenCV_LIBS} )
